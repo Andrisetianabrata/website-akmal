@@ -7,7 +7,7 @@ class data extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('tb_sensor');
-        $this->db->order_by('id', 'desc');
+        $this->db->order_by('id', 'asc');
         $query = $this->db->get();
         return $query->row();
     }
